@@ -77,7 +77,12 @@
   max-width: 60%;
   text-align: center;
 }
-.row {
+#mitra-logo {
+  margin-left: 50px;
+  /* margin-top: 500px; */
+  max-height: 300px;
+  max-width: auto;
+  /* object-fit: cover; */
 }
 
 /*==================================================================
@@ -135,6 +140,20 @@
   object-fit: cover;
   background-color: #000;
 } */
+
+/*==================================================================
+            Kontak section Style
+====================================================================*/
+
+.align-center {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logo-kontak {
+  max-height: 20px;
+}
 /*=================================================================
                         end tambahan section
 ===================================================================*/
@@ -1513,7 +1532,7 @@ li .single_team_text p {
   color: #e74e3e;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  margin-bottom: 19px;
+  /* margin-bottom: 19px; */
 }
 .contact_info_content h4 {
   font-family: "Open Sans", sans-serif;
