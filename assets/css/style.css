@@ -73,12 +73,13 @@
 .tentang {
 }
 .kami_head {
-  margin: auto;
+  margin: auto auto auto 200px;
   max-width: 60%;
   text-align: center;
 }
 #mitra-logo {
-  margin-left: 50px;
+  margin: auto 50px auto 50px;
+  /* margin-left: 50px; */
   /* margin-top: 500px; */
   max-height: 300px;
   max-width: auto;
@@ -126,12 +127,26 @@
 }
 
 #slide-foto img {
+  margin-top: 40px;
   margin-left: 50px;
   /* margin-top: 500px; */
   max-height: 300px;
   max-width: auto;
   border-radius: 10px;
   /* object-fit: cover; */
+
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#slide-foto:hover img {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+  border-radius: 10px;
+  box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
+  -webkit-box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
+  -moz-box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
 }
 
 /* .galeri-slide img {
@@ -153,6 +168,12 @@
 
 .logo-kontak {
   max-height: 20px;
+}
+#card-kontak{
+  border-radius: 10px;
+  box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
+  -webkit-box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
+  -moz-box-shadow: -6px 0px 3px 0px rgba(145, 145, 145, 1);
 }
 /*=================================================================
                         end tambahan section
@@ -719,7 +740,7 @@ input::-ms-input-placeholder {
   z-index: 300;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-color: rgba(34, 61, 97, 0.64);
+  background-color: rgba(124, 125, 126, 0.64);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
